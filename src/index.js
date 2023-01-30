@@ -18,7 +18,7 @@ app.use("/", route)
 
 const dbconnection = async ()=>{
    try {
-   await mongoose.connect("mongodb+srv://Ashish:7SiSkJ8Z0nkx2EWh@cluster0.8dgrxmt.mongodb.net/group2Database",{useNewUrlParser:true})
+   await mongoose.connect("mongodb+srv://singh-csm:GIUPM5681K@singh-csm.nmfw5jk.mongodb.net/group2Database",{useNewUrlParser:true})
     console.log("Database connect");
    } catch (error) {
     console.log("error while db connection", error.message);
@@ -30,3 +30,4 @@ dbconnection()
 app.listen(process.env.PORT ,()=>{
     console.log(`server start on port ${PORT}`);
 })
+
